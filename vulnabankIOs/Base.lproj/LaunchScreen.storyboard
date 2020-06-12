@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-BoldItalic.ttf">
+            <string>Roboto-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ChJ-NA-KDO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefDevLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wKh-jQ-nbG">
+                                <rect key="frame" x="87" y="172" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1DT-mw-38j"/>
+                                    <constraint firstAttribute="width" secondItem="wKh-jQ-nbG" secondAttribute="height" multiplier="15:8" id="7xg-6P-bb3"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="VulnaBank" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-r6-rG0">
+                                <rect key="frame" x="131" y="308" width="152" height="38"/>
+                                <color key="textColor" name="ColorPrimaryDark"/>
+                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="ColorBacground"/>
+                        <constraints>
+                            <constraint firstItem="8rS-r6-rG0" firstAttribute="centerX" secondItem="ChJ-NA-KDO" secondAttribute="centerX" id="L9M-5S-gUw"/>
+                            <constraint firstItem="wKh-jQ-nbG" firstAttribute="top" secondItem="4As-R2-546" secondAttribute="top" constant="128" id="NVJ-1a-Cj2"/>
+                            <constraint firstItem="8rS-r6-rG0" firstAttribute="top" secondItem="wKh-jQ-nbG" secondAttribute="bottom" constant="8" id="XJr-h4-tJL"/>
+                            <constraint firstItem="wKh-jQ-nbG" firstAttribute="centerX" secondItem="ChJ-NA-KDO" secondAttribute="centerX" id="wiH-Ox-Koq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4As-R2-546"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DefDevLogo" width="512" height="512"/>
+        <namedColor name="ColorBacground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorPrimaryDark">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
