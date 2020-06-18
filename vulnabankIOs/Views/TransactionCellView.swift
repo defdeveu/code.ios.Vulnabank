@@ -2,16 +2,12 @@
 //  TransactionCellView.swift
 //  vulnabankIOs
 //
-//  Created by feco on 2020. 06. 04..
-//  Copyright © 2020. sagifer. All rights reserved.
-//
 
 import Foundation
 import UIKit
 
 final class TransactionCellView: UITableViewCell {
-    
-   
+
     @IBOutlet weak var errorView: UIStackView!
     @IBOutlet weak var transactionView: UIStackView!
     @IBOutlet weak var errorMessageLabel: UILabel!
