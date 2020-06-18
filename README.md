@@ -1,7 +1,7 @@
 # VulnaBank
 ### defdeveu. iOS secdev exam app.
 
-The application is the exam material for a â€˜Secure iOS Coding Trainingâ€™. The application has some serious security issues while providing â€˜life likeâ€™ functionality (of a banking app).
+The application is the exam material for a ‘Secure iOS Coding' course. The application has some serious security issues while providing ‘life like’ functionality (of a banking app).
 
 ### Technology stack
 
