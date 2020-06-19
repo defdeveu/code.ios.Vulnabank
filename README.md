@@ -78,5 +78,10 @@ The ViewModels use DynamicValue type which provides observable listeners for eve
     
     defdevmsg://add?recipient=xy&amount=123
     
-    
+### Credits
+* Created by Ferenc Sági
+* Specification by Zsombor Kovács
+* Photo by Agustin Mariano Quezada on Unsplash.
+
+
     
