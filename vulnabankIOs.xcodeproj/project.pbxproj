@@ -554,7 +554,7 @@
 				CODE_SIGN_ENTITLEMENTS = vulnabankIOs/VulnaBank.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8EQZ487TY9;
 				INFOPLIST_FILE = vulnabankIOs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -562,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.defdev.vulnabankIOs;
 				PRODUCT_NAME = VulnaBank;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -579,7 +579,7 @@
 				CODE_SIGN_ENTITLEMENTS = vulnabankIOs/VulnaBank.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8EQZ487TY9;
 				INFOPLIST_FILE = vulnabankIOs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -587,7 +587,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.defdev.vulnabankIOs;
 				PRODUCT_NAME = VulnaBank;
 				PROVISIONING_PROFILE_SPECIFIER = "";
