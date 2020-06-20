@@ -17,7 +17,7 @@ struct Constants {
         static let logFilename = "debug.log"
         static let dbFilename = "db.sqlite"
         static let pinBackupFilename = "pinBackup.txt"
-        static let serverEndpoint = "http://127.0.0.1:9999/request"
+        static let serverEndpoint = "http://api.vulnabank.com:9999/request"
         static let userDefaultAuthPin = "Pin"
         static let AES_KEY = "00112233445566778899aabbccddeeff"
         static let AES_IV = "1111111111111111"

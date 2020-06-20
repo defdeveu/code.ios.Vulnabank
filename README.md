@@ -24,9 +24,8 @@ The application is the exam material for a ‘Secure iOS Coding' course. The app
 - open the vulnabankIOs.xcworkspace in Xcode
 - set your team and provisioning profile at the Signing section 
 
-### Application overview
 
-![Application overview](defdeveu_mockup.png)
+### Application overview
 
 ### Structure
 
@@ -76,7 +75,7 @@ The ViewModels use DynamicValue type which provides observable listeners for eve
 - **DeepLink**
     - The application can handle custom URL Scheme which provides add transaction functionality from other applications.    
     
-    defdevmsg://add?recipient=xy&amount=123
+    ddemsg://add?recipient=xy&amount=123
     
 [![social image](https://raw.githubusercontent.com/defdeveu/vulnabankIOS/master/assets/agustin-mariano-quezada-FwA9_0uZcPQ-unsplash.crop.jpg)](https://github.com/defdeveu/vulnabankIOS)
     

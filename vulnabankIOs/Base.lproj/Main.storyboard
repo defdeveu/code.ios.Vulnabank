@@ -356,6 +356,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="B6x-We-FzM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PI7-3A-UMg">
+                                        <rect key="frame" x="40" y="100" width="334" height="197.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New transaction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt5-i9-Q48">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipient name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vg0-i9-Cu6">
+                                                <rect key="frame" x="0.0" y="47.5" width="334" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="bN3-eI-g4F"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="recipientEditChanged:" destination="l2P-jk-5mI" eventType="editingChanged" id="mjG-kg-kK6"/>
+                                                </connections>
+                                            </textField>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient name is reqired" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVk-sK-9qt">
+                                                <rect key="frame" x="0.0" y="100" width="334" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="ColorError"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eh9-kq-Uv1">
+                                                <rect key="frame" x="0.0" y="107.5" width="334" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="vff-z6-zJg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                <connections>
+                                                    <action selector="amountEditChanged:" destination="l2P-jk-5mI" eventType="editingChanged" id="0jA-cl-4WH"/>
+                                                </connections>
+                                            </textField>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount is required" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-gg-axM">
+                                                <rect key="frame" x="0.0" y="160" width="334" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="ColorError"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lq4-ii-f3T">
+                                                <rect key="frame" x="0.0" y="167.5" width="334" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0B-Hn-cSI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="30"/>
+                                                        <state key="normal" title="Cancel"/>
+                                                        <connections>
+                                                            <action selector="cancelButtonTouched:" destination="l2P-jk-5mI" eventType="touchUpInside" id="FUV-XX-sj8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-JF-vDc">
+                                                        <rect key="frame" x="177" y="0.0" width="157" height="30"/>
+                                                        <state key="normal" title="Send"/>
+                                                        <connections>
+                                                            <action selector="sendButtonTouched:" destination="l2P-jk-5mI" eventType="touchUpInside" id="UdM-Jr-WYr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="ColorBacground"/>
+                                <constraints>
+                                    <constraint firstItem="PI7-3A-UMg" firstAttribute="leading" secondItem="hM8-LN-Lgl" secondAttribute="leading" constant="40" id="RTN-jU-hPM"/>
+                                    <constraint firstItem="PI7-3A-UMg" firstAttribute="top" secondItem="hM8-LN-Lgl" secondAttribute="top" constant="100" id="pkR-QN-Mu4"/>
+                                    <constraint firstItem="hM8-LN-Lgl" firstAttribute="trailing" secondItem="PI7-3A-UMg" secondAttribute="trailing" constant="40" id="tuY-bj-jgg"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="hM8-LN-Lgl"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-P2-SKd">
                                 <rect key="frame" x="40" y="100" width="334" height="197.5"/>
                                 <subviews>
@@ -433,6 +510,7 @@
                         <outlet property="amountErrorLabel" destination="VBz-L3-fen" id="8ly-us-vo2"/>
                         <outlet property="amountTextField" destination="WHF-NV-UG3" id="JUg-6n-2HC"/>
                         <outlet property="cancelButton" destination="sRS-QR-4kw" id="5QW-TR-GVW"/>
+                        <outlet property="contentView" destination="PI7-3A-UMg" id="cGy-Cp-gDD"/>
                         <outlet property="recipientErrorLabel" destination="YRb-0M-5uk" id="mKL-fl-eit"/>
                         <outlet property="recipientTextField" destination="CTq-wb-Rj8" id="ogV-BX-fRg"/>
                         <outlet property="sendButton" destination="dbO-g6-ydo" id="JWy-MH-Sr0"/>
@@ -440,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbI-mR-UZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5101" y="145"/>
+            <point key="canvasLocation" x="5100" y="144.64285714285714"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="hXb-bw-NlJ">
