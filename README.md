@@ -83,7 +83,7 @@ The ViewModels use DynamicValue type which provides observable listeners for eve
 ### Credits
 * Created by Ferenc Sági
 * Specification by Zsombor Kovács
-* Photo by Agustin Mariano Quezada on Unsplash.
+* Photo by Agustin Mariano Quezada used under the Unsplash Licence; derived work by Ksenia Kotelnikova
 
 
     
