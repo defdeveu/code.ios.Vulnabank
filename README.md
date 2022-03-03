@@ -1,6 +1,11 @@
 # VulnaBank
 ### defdeveu. iOS secdev exam app.
 
+> This branch is a work in progress, and enables the app to build and run on M1. However additional steps are still needed: 
+> 1. Close XC
+> 2. run: *pod install*
+> 3. Open the project via the localy updated *vulnabankIOs.xcworkspace*
+
 The application is the exam material for a ‘Secure iOS Coding' course. The application has some serious security issues while providing ‘life like’ functionality (of a banking app).
 
 ### Technology stack
