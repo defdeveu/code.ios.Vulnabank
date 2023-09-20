@@ -1,12 +1,15 @@
 # VulnaBank
-### defdeveu. iOS secdev exam app.
+### defdev's iOS development security exam app.
 
-> This branch is a work in progress, and enables the app to build and run on M1. However additional steps are still needed: 
-> 1. Close XC
-> 2. run: *pod install*
-> 3. Open the project via the localy updated *vulnabankIOs.xcworkspace*
+This deliberately vulnerable application (DVA) is exam material used in the ‘Development security in iOS' blue level course by Zsombor Kovács (huobb0). The application has some serious security issues while providing ‘life like’ functionality (of a conceptual banking app).
 
-The application is the exam material for a ‘Secure iOS Coding' course. The application has some serious security issues while providing ‘life like’ functionality (of a banking app).
+### Build/Run
+
+Note, that the main purpose with this app is code review, so building and installation is possibly not the major concern in using it as a learning and practicing material.
+
+- git clone (the 'main' branch is sufficient for the purpose)
+- `pod install`
+- Open the vulnabankIOs._xcworkspace_ in Xcode
 
 ### Technology stack
 
@@ -21,14 +24,7 @@ The application is the exam material for a ‘Secure iOS Coding' course. The app
 
 - iOS 12.0 and later
 - Xcode 10 and later
-
-### Installation
-
-- clone git repository
-- pod install
-- open the vulnabankIOs.xcworkspace in Xcode
-- set your team and provisioning profile at the Signing section 
-
+- Apple Silicon compatible
 
 ### Application overview
 
@@ -86,9 +82,7 @@ The ViewModels use DynamicValue type which provides observable listeners for eve
     
     
 ### Credits
-* Created by Ferenc Sági
-* Specification by Zsombor Kovács
+* Implemented by Ferenc Sági (sagifer)
+* Idea and specification by Zsombor Kovács (huobb0)
+* Contributors: Julia Hanol (JGanol)
 * Photo by Agustin Mariano Quezada used under the Unsplash Licence; derived work by Ksenia Kotelnikova
-
-
-    
