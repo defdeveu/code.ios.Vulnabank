@@ -1,0 +1,11 @@
+// Hosted endpoint used by ordinary classroom builds.
+//
+// xcconfig treats // as the beginning of a comment. Constructing the scheme
+// separator from LAB_URL_SLASH preserves the complete URL in the generated
+// Info.plist instead of silently truncating it after "https:".
+LAB_URL_SLASH = /
+LAB_VULNABANK_URL = https:$(LAB_URL_SLASH)$(LAB_URL_SLASH)zsk.labs.def.dev/secure-communication/request
+
+// A gitignored Local.xcconfig overrides the value above when it is present;
+// #include? is an optional include, so ordinary builds are unaffected.
+#include? "Local.xcconfig"

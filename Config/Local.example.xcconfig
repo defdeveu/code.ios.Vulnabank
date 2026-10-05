@@ -1,0 +1,4 @@
+// Copy this file to the ignored Local.xcconfig to point the app at a local
+// HiPinSeco server instead of the hosted origin.
+LAB_URL_SLASH = /
+LAB_VULNABANK_URL = http:$(LAB_URL_SLASH)$(LAB_URL_SLASH)localhost:8090/secure-communication/request
