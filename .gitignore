@@ -3,7 +3,5 @@ DerivedData/
 build/
 .build/
 .DS_Store
-Pods/
-Podfile.lock
 Config/Local.xcconfig
 Config/_Local.xcconfig
